@@ -3,8 +3,6 @@ language: php
 php:
   - 7.2.5
 
-
-
 cache:
   directories:
     - node_modules
@@ -17,4 +15,4 @@ before_script:
   - php mama --version
 
 script:
-  - vendor/bin/phpunit
+  - php mama test
