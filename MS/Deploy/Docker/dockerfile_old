@@ -1,0 +1,39 @@
+FROM webdevops/php-apache:7.3
+
+ENV PHP_DATE_TIMEZONE="Asia/Kolkata"
+
+ENV PHP_MEMORY_LIMIT=1073741824
+ENV WEB_ALIAS_DOMAIN="nc1.msllp.in"
+ENV PHP_MAX_EXECUTION_TIME=300
+
+ENV PHP_POST_MAX_SIZE="50M"
+ENV PHP_UPLOAD_MAX_FILESIZE="50M"
+
+COPY conf/etc/httpd/vhost.conf /opt/docker/etc/httpd/vhost.conf
+RUN apt update -y && apt upgrade -y && apt install apt-utils -y&& apt install curl  -y && apt install git -y
+RUN curl -s https://getcomposer.org/installer | php
+RUN cd /app && curl -sL https://deb.nodesource.com/setup_12.x | bash && apt-get install nodejs -y
+
+#RUN bash -c "npm install"
+
+
+
+#GIT_URL="https://github.com/msllp/Laravel_boilerplate.git";
+WORKDIR /app
+RUN git --version
+#RUN mkdir ~/.ssh
+#RUN ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+RUN git clone https://github.com/msllp/Laravel_boilerplate.git /app
+RUN composer install
+
+RUN npm install
+
+
+
+
+COPY conf/etc/httpd/main.conf /opt/docker/etc/httpd/main.conf
+
+VOLUME /app
+CMD [ "npm", "install" ]
+EXPOSE 80 443 90

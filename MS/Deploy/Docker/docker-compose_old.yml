@@ -1,0 +1,21 @@
+version: "3.7"
+
+
+services:
+  "webq":
+    # replace username/repo:tag with your name and image details
+    #build: .
+    image: msllp/ms_auto:0.0.1
+    container_name: ms_1
+    # deploy:
+    #   replicas: 1
+    #   restart_policy:
+    #     condition: on-failure
+    ports:
+      - "29170:80"
+      - "29171:443"
+      - "29172:90"
+   # volumes:
+    #  - type: bind
+    #    source: E:/MS-Master/Projects/FrameworkPHP/gst_invoice/Master
+    #    target: /app

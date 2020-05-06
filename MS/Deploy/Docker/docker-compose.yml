@@ -1,0 +1,23 @@
+version: "3.7"
+ 
+ 
+ 
+services:
+   "1_services":
+      image: msllp/ms_auto:0.0.1
+      container_name: container_1
+      ports:
+            - "57915:80"
+            - "61932:443"
+            - "57136:90"
+            - "51858:22"
+ 
+   "1_services_20":
+      image: msllp/ms_auto:0.0.1
+      container_name: container_1_20
+      ports:
+            - "56618:80"
+            - "59374:443"
+            - "62156:90"
+            - "53996:22"
+ 
