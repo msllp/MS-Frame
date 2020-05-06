@@ -4,6 +4,8 @@
 /storage/*.key
 /vendor
 /.idea
+/Key
+/ssl
 .env
 .phpunit.result.cache
 Homestead.json
@@ -14,16 +16,3 @@ yarn-error.log
 *.lock
 *.js
 package-lock.json
-
-
-/node_modules
-/vendor
-/.idea
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
-*.bat
-*.lock
-
