@@ -4,7 +4,8 @@
     "description": "MS-Frame version 5.8",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "Million Solutions"
     ],
     "license": "MIT",
     "require": {
