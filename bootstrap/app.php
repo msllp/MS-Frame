@@ -1,9 +1,13 @@
 <?php
-header('Access-Control-Allow-Origin: *');
+
+
+//header('Access-Control-Allow-Origin: https://192.168.0.106');
+header('Access-Control-Allow-Origin: https://web.o3erp.ms');
 header('Access-Control-Allow-Methods: *');
-header('Access-Control-Allow-Headers: *');
-header("Access-Control-Max-Age", "3600");
-header("Access-Control-Allow-Credentials", "true");
+header('Access-Control-Allow-Headers: MS-APP-ID,MS-APP-Token,X-XSRF-TOKEN,x-requested-with,x-csrf-token,content-type,access-control-allow-origin,access-control-allow-headers');
+header("Access-Control-Max-Age: 3600");
+header("Access-Control-Allow-Credentials: true");
+
 /*
 |--------------------------------------------------------------------------
 | Create The Application
