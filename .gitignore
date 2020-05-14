@@ -1,10 +1,20 @@
 /node_modules/
+<<<<<<< HEAD
 /public
 /public/storage
 /storage/*.key
 /vendor/
 /.idea/
 /Key/
+=======
+/public/
+/public/storage
+/storage/*.key
+/vendor/
+/.idea
+/Key/
+/ssl/
+>>>>>>> b4a64a4e238d38c6e2f6034440c9d26ebcd01602
 .env
 .phpunit.result.cache
 Homestead.json
