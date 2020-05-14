@@ -35,7 +35,7 @@ class Kernel extends HttpKernel
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \App\Http\Middleware\VerifyCsrfToken::class,
+        //    \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
     //        \App\Http\Middleware\SettingOn::class,
             \MS\Middlelwares\checkValidRoute::class
@@ -45,6 +45,12 @@ class Kernel extends HttpKernel
             'throttle:60,1',
             'bindings',
         ],
+        'onlyAjax'=>[
+            \MS\Middlelwares\onlyAjaxRoute::class
+        ],
+        'onlyUsers'=>[
+            \MS\Middlelwares\onlyForUsers::class
+        ]
     ];
 
     /**
