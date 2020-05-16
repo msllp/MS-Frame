@@ -9,6 +9,7 @@
     ],
     "license": "MIT",
     "require": {
+        "php": "^7.2.5",
         "beyondcode/laravel-websockets": "^1.4",
         "msllp/core": "dev-master",
         "msllp/modules": "dev-master"

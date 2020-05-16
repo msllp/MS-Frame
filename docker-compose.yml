@@ -1,7 +1,6 @@
-version: '3.7'
-services:
-  #WebServer
+version: '3.8'
 
+services:
 
   webserver:
     build:
@@ -14,8 +13,8 @@ services:
       - "90:90"
       - "443:443"
     volumes:
-      - ./bootstrap:/app/bootstrap
-      - ./vendor/msllp:/app/vendor/msllp
+      - ../o3 mainframe:/app/backend
+      - ../o3 website:/app/frontend
     networks:
       - app-network
 

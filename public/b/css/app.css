@@ -98348,6 +98348,8 @@ Creation date: 10/12/2019 22:01
   font-size: 1.125rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   border-bottom-width: 1px;
   border-color: #b295df;
 }
@@ -98576,6 +98578,70 @@ Creation date: 10/12/2019 22:01
 }
 
 @media (min-width: 1280px) {
+}
+
+.ms-add-account-btn {
+  cursor: pointer;
+}
+
+.ms-add-account-btn .ms-company-setup-form-body-head {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  --bg-opacity: 1;
+  background-color: #90cdf4;
+  background-color: rgba(144, 205, 244, var(--bg-opacity));
+}
+
+.ms-add-account-btn .ms-company-setup-form-body-head:hover {
+  --bg-opacity: 1;
+  background-color: #4299e1;
+  background-color: rgba(66, 153, 225, var(--bg-opacity));
+}
+
+.ms-add-account-btn-disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.ms-add-account-btn-disabled .ms-company-setup-form-body-head {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  cursor: not-allowed;
+  pointer-events: none;
+  --bg-opacity: 1;
+  background-color: #cbd5e0;
+  background-color: rgba(203, 213, 224, var(--bg-opacity));
+}
+
+.ms-company-setup-form-body-row-col .ms-delete-btn {
+  padding: 0.25rem;
+  border-width: 1px;
+  --bg-opacity: 1;
+  background-color: #fed7d7;
+  background-color: rgba(254, 215, 215, var(--bg-opacity));
+  cursor: pointer;
+  float: left;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #f44336;
+}
+
+.ms-company-setup-form-body-row-col .ms-delete-btn-disabled {
+  --text-opacity: 1;
+  color: #a0aec0;
+  color: rgba(160, 174, 192, var(--text-opacity));
+  padding: 0.25rem;
+  border-width: 1px;
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
+  float: left;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 body {
