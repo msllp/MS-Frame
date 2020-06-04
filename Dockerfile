@@ -17,12 +17,18 @@ RUN apt-get install git -y
 #COPY .env /app
 RUN chown -R www-data:www-data /app
 RUN chmod -R 777 /app
+
 RUN mkdir /app/backend
 RUN chown -R www-data:www-data /app/backend
 RUN chmod -R 777 /app/backend
+
 RUN mkdir /app/frontend
 RUN chown -R www-data:www-data /app/frontend
 RUN chmod -R 777 /app/frontend
+
+RUN mkdir /app/ms-frame-docs
+RUN chown -R www-data:www-data /app/ms-frame-docs
+RUN chmod -R 777 /app/ms-frame-docs
 
 
 #RUN cd /app && curl -s https://getcomposer.org/installer | php
@@ -33,5 +39,6 @@ RUN chmod -R 777 /app/frontend
 
 VOLUME /app/frontend
 VOLUME /app/backend
+VOLUME /app/ms-frame-doc
 EXPOSE 80 443 90
 

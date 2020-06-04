@@ -15,6 +15,7 @@ services:
     volumes:
       - ../o3 mainframe:/app/backend
       - ../o3 website:/app/frontend
+      - ../ms-frame-doc:/app/ms-frame-docs
     networks:
       - app-network
 

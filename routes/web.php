@@ -37,3 +37,11 @@
 //});
 
 Route::get('/', '\MS\Mod\B\Panel4O3\C@MaintainaceDashboard');
+//
+//Route::post('/webwhatsapp/{from}/{msg}',function ($from,$msg){
+//    return response()->json(['msg'=>'I am Bot Created By Million Solutions LLP and Your OTP is : '.\MS\Core\Helper\Comman::random(18,4,1,[$from])]);
+//});
+//
+Route::get('/test',function (){
+    dd(ms()->version());
+});

@@ -1,9 +1,21 @@
 <?php
 
+$origin='*';
+if (array_key_exists('HTTP_ORIGIN', $_SERVER)) {
+    $origin = $_SERVER['HTTP_ORIGIN'];
+}
+elseif (array_key_exists('HTTP_REFERER', $_SERVER)) {
+    $origin = $_SERVER['HTTP_REFERER'];
+} elseif (array_key_exists('REMOTE_ADDR', $_SERVER)) {
+    $origin = $_SERVER['REMOTE_ADDR'];
+}
 
-//header('Access-Control-Allow-Origin: https://192.168.0.106');
-header('Access-Control-Allow-Origin: https://web.o3erp.ms');
+//var_dump($origin);
+//header('Access-Control-Allow-Origin: https://www.o3erp.com');
+//header('Access-Control-Allow-Origin: https://localhost:3000');
+header('Access-Control-Allow-Origin: '.$origin);
 header('Access-Control-Allow-Methods: *');
+//header('Access-Control-Allow-Headers: *');
 header('Access-Control-Allow-Headers: MS-APP-ID,MS-APP-Token,X-XSRF-TOKEN,x-requested-with,x-csrf-token,content-type,access-control-allow-origin,access-control-allow-headers');
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Credentials: true");

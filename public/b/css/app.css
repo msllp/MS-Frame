@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500&display=swap);@charset "UTF-8";
+@charset "UTF-8";
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -93640,16 +93640,6 @@ Creation date: 18/10/2019 23:34
   cursor: pointer;
 }
 
-.ms-company-logo-2 {
-  cursor: pointer;
-  max-height: 70px;
-  padding: 0.25rem;
-  padding-left: 0.75rem;
-  margin-left: 0.5rem;
-  margin-left: 0.5rem;
-  border-left-width: 1px;
-}
-
 .ms-company-logo-text-2 {
   cursor: pointer;
   max-height: 70px;
@@ -94035,6 +94025,16 @@ Creation date: 18/10/2019 23:34
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   background: linear-gradient(35deg, #a4addf, #606fc7);
   border-color: #3f51b5;
+}
+
+.ms-company-logo-2 {
+  cursor: pointer;
+  max-height: 70px;
+  padding: 0.25rem;
+  padding-left: 0.75rem;
+  margin-left: 0.5rem;
+  margin-left: 0.5rem;
+  border-left-width: 1px;
 }
 
 .ms-nav-container {
@@ -94496,15 +94496,24 @@ Creation date: 18/10/2019 23:34
   color: rgba(255, 255, 255, 0.9);
 }
 
-.ms-dark-mode {
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+.ms-dark-mode .ms-company-logo-2 {
+  cursor: pointer;
+  max-height: 70px;
+  padding: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-left: 0.5rem;
+  margin-left: 0.5rem;
+  border-left-width: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25rem;
 }
 
 .ms-dark-mode .ms-nav-container {
   z-index: 2501;
   position: fixed;
   background: linear-gradient(47deg, black, rgba(0, 0, 0, 0.9));
+  border-bottom-width: 1px;
 }
 
 .ms-dark-mode .ms-livebox {
@@ -95069,6 +95078,7 @@ Creation date: 18/10/2019 23:34
   width: 100%;
   border-bottom-width: 1px;
   border-bottom-color: #7947c7;
+  color: rgba(255, 255, 255, 0.8);
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   margin-bottom: 0.5rem;
@@ -95079,14 +95089,17 @@ Creation date: 18/10/2019 23:34
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: linear-gradient(47deg, rgba(255, 255, 255, 0.1), #b295df);
+  font-weight: 600;
+  background: linear-gradient(47deg, #3a3ac6, #b295df);
 }
 
 .ms-main-title:hover {
+  font-weight: 600;
   padding-left: 1rem;
   margin-right: 0.75rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  background: linear-gradient(47deg, white, #b295df);
+  color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(127deg, #3a3ac6, #b295df);
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
@@ -95191,7 +95204,7 @@ Creation date: 18/10/2019 23:34
   border-color: rgba(97, 88, 206, 0.8);
   position: -webkit-sticky;
   position: sticky;
-  top: 32px;
+  top: 47px;
   padding: 0.5rem;
   margin-bottom: 0.25rem;
 }
@@ -95361,12 +95374,12 @@ Creation date: 18/10/2019 23:34
 
 .ms-dark-mode .ms-master-title-in-sub {
   border-bottom-width: 1px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #3f51b5;
   color: rgba(255, 255, 255, 0.9);
   border-color: rgba(97, 88, 206, 0.8);
   position: -webkit-sticky;
   position: sticky;
-  top: 32px;
+  top: 47px;
   padding: 0.5rem;
   margin-bottom: 0.25rem;
 }
@@ -95470,7 +95483,7 @@ svg {
   color: #b295df;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  background: linear-gradient(47deg, #b295df, white);
+  background: linear-gradient(47deg, #b295df, #3a3ac6);
   font-size: 12px;
   z-index: 1126;
 }
@@ -95510,7 +95523,7 @@ svg {
 }
 
 .ms-tab-btn-inner {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   display: inline-block;
   padding-top: 0.5rem;
@@ -95586,7 +95599,7 @@ svg {
 }
 
 .ms-dark-mode .ms-tab-btn-inner {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   color: rgba(0, 0, 0, 0.9);
   display: inline-block;
@@ -98642,6 +98655,102 @@ Creation date: 10/12/2019 22:01
   padding-right: 0.5rem;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+/* cyrillic-ext */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url(./1.woff2) format("woff2");
+
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url(./2.woff2) format("woff2");
+
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIJsdO_q.woff2) format("woff2");
+
+  unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjSL9AI5sdO_q.woff2) format("woff2");
+
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjSL9AI9sdO_q.woff2) format("woff2");
+
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdA.woff2) format("woff2");
+
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 body {
